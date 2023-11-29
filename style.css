@@ -19,12 +19,14 @@
 .weather-main{
     width: 80vw;
     height: 70vh;
-    background-color: rgba(176, 225, 225, 0.622);
+    /* background-color: rgba(176, 225, 225, 0.622); */
+    background: url("/media/clouds3.jpg") no-repeat center;
+    background-size: cover;
     position: fixed;
     top: 100px;
     left: 130px;
     border-radius: 18px;
-    gap: 10px;
+    gap: 20px;
 }
 .search{
     width: 60%;
@@ -55,7 +57,7 @@
 }
 .main{
     display: block;
-    width: 55%;
+    width: 60%;
     height: 76%;
 }
 .main img{
