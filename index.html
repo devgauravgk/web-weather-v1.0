@@ -7,18 +7,84 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-   <div class="container"> 
+   <div class="container">
+    <div class="weatherapp">
+        <div class="tittle">
+            <h1 class="name">GK'weather WebApp-v1.0</h1>
+        </div>
+        <div class="weather-main">
+            <div class="search">
+                <input type="text" id="searchbox" placeholder="Enter city name">
+                <button id="searchbtn"><img src="/media/srchbtn.png" alt=""></button>
+            </div>
+            <div class="citytemp">
+                <h1 id="city">Ahemdabad : <span id="temp">40C</span>  </h1>
+            </div>
+            <div class="weather-mainimg">
+                <img src="/media/mainimg.png" alt="">
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/clear.png">
+                </div>
+                <div class="col-txt">
+                    <h2>Status : <span id="humidity">clear</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/pressure.png">
+                </div>
+                <div class="col-txt">
+                    <h2>Pressure : <span id="pressure">24 hPa</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/wind speed.png">
+                </div>
+                <div class="col-txt">
+                    <h2>humidity : <span id="wind">19 km/h</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/max-temp.png">
+                </div>
+                <div class="col-txt">
+                    <h2>Min-Temp. : <span id="temp_min">33C</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/humidity.png">
+                </div>
+                <div class="col-txt">
+                    <h2>Max-Temp : <span id="temp_max">30C</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/humidity.png">
+                </div>
+                <div class="col-txt">
+                    <h2>visibility : <span id="humidity">4 km</span></h2>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="/media/humidity.png">
+                </div>
+                <div class="col-txt">
+                    <h2>humidity : <span id="humidity">33%</span></h2>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
    </div>
-   <div class="weather-main">
-       <div class="search">
-        <input type="text" id="searchbox" placeholder="Enter city name">
-        <button id="searchbtn"><img src="/media/srchbtn.png" id="searchbtnimg"></button>
-       </div>
-       <div class="main">
-        <h1 id="city">Ahemdabad : <span id="temp">40˚C</span></h1>
-        <img src="/media/mainimg.png" id="mainimg" width="400px">
-        
-       </div>
-   </div> 
 </body>
 </html>
