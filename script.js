@@ -6,6 +6,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const searchBox = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 const weathericon = document.querySelector(".weather-icon")
+const card = document.querySelector(".card");
 
 
 async function checkWeather(city) {
@@ -31,6 +32,7 @@ async function checkWeather(city) {
 
 
 
+
     if (data.weather[0].main == "Clouds") {
         weathericon.src = "media/clouds.png"
     }
@@ -39,6 +41,7 @@ async function checkWeather(city) {
     }
     else if (data.weather[0].main == "Rain") {
         weathericon.src = "media/rain.png"
+
     }
     else if (data.weather[0].main == "Drizzle") {
         weathericon.src = "media/drizzle.png"
