@@ -1,90 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-Weather-v1.0</title>
+    <title>Weather Web App</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-   <div class="container">
-    <div class="weatherapp">
-        <div class="tittle">
-            <h1 class="name">GK'weather WebApp-v1.0</h1>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name " spellcheck="false">
+            <button><img src="/media/srchbtn2.png" width="40px" height="40px"></button>
         </div>
-        <div class="weather-main">
-            <div class="search">
-                <input type="text" id="searchbox" placeholder="Enter city name">
-                <button id="searchbtn"><img src="/media/srchbtn.png" alt=""></button>
-            </div>
-            <div class="citytemp">
-                <h1 id="city">Ahemdabad : <span id="temp">40C</span>  </h1>
-            </div>
-            <div class="weather-mainimg">
-                <img src="/media/mainimg.png" alt="">
-            </div>
+        <div class="error">
+            <p>Invalid City Name</p>
         </div>
-        <div class="weather-details">
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/clear.png">
+        <div class="weather">
+            <img src="/media/clear.png" class="weather-icon">
+            <h3 class="weather-status">Weather Status : <span class="status"> Clear</span></h2>
+                <h1 class="temp">22˚C</h1>
+                <h2 class="city">Haridwar</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/media/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/media/wind speed.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="col-txt">
-                    <h2>Status : <span id="humidity">clear</span></h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/media/max-temp.png">
+                        <div>
+                            <p class="max-temp">45˚C</p>
+                            <p>Max-Temp</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/media/pressure.png">
+                        <div>
+                            <p class="pressure">15 bar</p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+
+
                 </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/pressure.png">
+                <div class="details">
+                    <div class="col">
+                        <img src="/media/low-temp.png">
+                        <div>
+                            <p class="temp_min">45˚C</p>
+                            <p>Min-Temp</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/media/visibility.png">
+                        <div>
+                            <p class="visibility">5 km</p>
+                            <p>visibility</p>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="col-txt">
-                    <h2>Pressure : <span id="pressure">24 hPa</span></h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/wind speed.png">
-                </div>
-                <div class="col-txt">
-                    <h2>humidity : <span id="wind">19 km/h</span></h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/max-temp.png">
-                </div>
-                <div class="col-txt">
-                    <h2>Min-Temp. : <span id="temp_min">33C</span></h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/humidity.png">
-                </div>
-                <div class="col-txt">
-                    <h2>Max-Temp : <span id="temp_max">30C</span></h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/humidity.png">
-                </div>
-                <div class="col-txt">
-                    <h2>visibility : <span id="humidity">4 km</span></h2>
-                </div>
-            </div>
-            <div class="col">
-                <div class="col-img">
-                    <img src="/media/humidity.png">
-                </div>
-                <div class="col-txt">
-                    <h2>humidity : <span id="humidity">33%</span></h2>
-                </div>
-            </div>
-            
-            
         </div>
     </div>
-   </div>
+
+
+    <script src="/script.js"></script>
 </body>
+
 </html>
